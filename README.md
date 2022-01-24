@@ -1,2 +1,2 @@
 # Python-Jobs
-Participei de um desafio para vaga júnior de 
+Contém projetos realizados utilizando Python para resolução de desafios e exploração de dados.
