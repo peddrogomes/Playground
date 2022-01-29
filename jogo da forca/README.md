@@ -4,7 +4,7 @@ Complete a estrutura do código disponibilizado no arquivo hangman.py desenvolve
 
 A imagem exemplo foi disponibilizada para visualização do esperado pelo projeto.
 
-O hangman.py desta pasta é o original oferecido caso queira realizar o desafio.
+O hangman.py desta pasta é o original proposto no desafio.
 
 A pasta resolução contém o readme explicando melhor sobre os desafios encontrados e a resolução do mesmo.
 
