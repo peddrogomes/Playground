@@ -26,21 +26,23 @@ Adafruit_SSD1306 display(/*MOSI*/ D7, /*CLK*/ D5, /*DC*/ D1, /*RESET*/ D3, /*CS*
 U8G2_FOR_ADAFRUIT_GFX u8g2_for_adafruit_gfx;
 
 void setup() {
-  display.clearDisplay();
+  // display.clearDisplay();
   Serial.begin(115200);
   // Serial.setDebugOutput(true);
   Serial.println();
   Serial.println();
   Serial.println();
 
+  display.begin(SSD1306_SWITCHCAPVCC);
+  u8g2_for_adafruit_gfx.begin(display);  
+  
   for (uint8_t t = 4; t > 0; t--) {
     Serial.printf("[SETUP] WAIT %d...\n", t);
     Serial.flush();
     delay(1000);
 
   }
-  display.begin(SSD1306_SWITCHCAPVCC);
-  u8g2_for_adafruit_gfx.begin(display);  
+
 
   WiFi.mode(WIFI_STA);
   WiFiMulti.addAP(SECRET_SSID, SECRET_PASS);
